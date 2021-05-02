@@ -13,7 +13,7 @@ class CoffeeShopRepository @Inject constructor(val coffeeShopApi: CoffeeShopApi)
 
     private var newestCoffeeShop = MutableLiveData<CoffeeShop>((CoffeeShop("Alfred Coffee")))
 
-    fun add(name: String) = {
+    fun add(name: String) {
         coffeeShops.add(CoffeeShop(name))
         newestCoffeeShop.value = coffeeShops.last()
     }

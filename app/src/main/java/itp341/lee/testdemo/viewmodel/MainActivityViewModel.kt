@@ -11,7 +11,7 @@ class MainActivityViewModel @Inject constructor(private val coffeeShopRepository
 
     var latestCoffeeShopName: String = "what"
 
-    fun add() = {
+    fun add() {
         coffeeShopRepository.add(latestCoffeeShopName)
 
     }
